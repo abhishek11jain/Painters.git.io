@@ -42,18 +42,16 @@ li{
 /* topbar start */
 #top-bar-section{
         border-bottom: 1px solid #2a8c73;
+        align-items: center;
 }
 /* fa fa icon code */
 #top-bar-section .icon {
-        position:absolute;
-        margin:0;
+        margin:22px;
         padding:0;
         display:flex;
-        left: 15%;
-        top: 18%;
 }
 #top-bar-section .icon a {
-        position: relative;
+        /* position: relative; */
         width:40px;
         height:40px;
         display:block;
@@ -510,3 +508,77 @@ li{
         margin-top: 1em;
 }
 /* gallery section close */
+
+
+
+
+
+/* Media Query Start */
+@media only screen and (max-width:767px){
+        .navbar-section ul{
+                margin-bottom: 0 !important;
+        }
+        #top-bar-section .icon a {
+                width: 30px;
+                height: 27px;
+                padding: 2px;
+        }
+        #top-bar-section i {
+                width: 20px;
+                height: 20px;
+                padding: 4px;
+                font-size: 13px;
+        }
+        #top-bar-section img{
+                height: 70px;
+                margin-top: 10px;
+        }
+        .navbar {
+                white-space: nowrap;
+                flex-wrap: inherit;
+                padding: 0.5rem 0rem;
+                overflow-x: scroll;
+        }
+        #slider-section .carousel-item img {
+                height: 20ch;
+        }
+        #slider-section .carousel-caption {
+                display: none;
+        }
+        #about-section .text{
+                position: inherit;
+        }
+        #event-section .event-text {
+                padding: 1em;
+        }
+        #event-section .event-image {
+                height: 29ch;
+        }
+        #footer-section {
+                text-align: center;
+        }
+        #footer-section .logo-image {
+                width: 100%;
+        }
+
+
+        /* --------------------------------- */
+
+        #about-page {
+                padding: 0em;
+                padding-top: 2em;
+        }
+        #about-page .about-section {
+                padding: 1.5em;
+        }
+        #about-page p {
+                text-align: justify;
+        }    
+        #blogs-section .blogs {
+                height: auto;
+                padding: 8px;
+        }  
+        #blogs-section .blog {
+                padding: 1.5em;
+        }          
+}
